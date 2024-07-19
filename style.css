@@ -238,6 +238,10 @@ body.dark-mode animate {
     text-align: center;
 }
 
+h1 .Home{
+    color: #000;
+}
+
 .snowflake {
     position: absolute;
     top: 0px;

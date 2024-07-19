@@ -3,171 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
     <title>Home - Esraa Emary</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-        body {
-            background: rgb(173, 78, 103);
-            transition: background-color 0.5s;
-            position: relative;
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .nav-bar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            display: flex;
-            font-size: 20px;
-            gap: 20px;
-            padding: 20px;
-            background: #000;
-            color: rgb(173, 78, 103);
-        }
-        #logo {
-            flex-grow: 1;
-        }
-        .nav-bar a {
-            color: rgb(173, 78, 103);
-            font-size: 20px;
-            text-decoration: none;
-        }
-        .nav-bar a:hover {
-            cursor: pointer;
-            font-size: 25px;
-        }
-        .mode {
-            border-radius: 10rem;
-        }
-        .Home {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            width: 100vw;
-        }
-        #name {
-            font-size: 6rem;
-        }
-        .home {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-        .home h1::before {
-            content: '';
-            position: absolute;
-            right: 0;
-            width: 80%;
-            height: 20%;
-            background: linear-gradient(90deg, transparent 0%, rgb(173, 78, 103) 5%, rgb(173, 78, 103) 100%);
-            animation: animate 3s linear forwards;
-        }
-        @keyframes animate {
-            0% {
-                right: 0%;
-            }
-            100% {
-                right: -80%;
-            }
-        }
-        .snowflake {
-            position: absolute;
-            top: 0px;
-            transform: translateX(-50%);
-            animation: fall 5s linear infinite;
-            border-radius: 15rem;
-            width: 15px;
-            height: 15px;
-        }
-        @keyframes fall {
-            0% {
-                top: 0px;
-                transform: translateX(-50%) rotate(0deg);
-            }
-            100% {
-                top: 100vh;
-                transform: translateX(-50%) rotate(360deg);
-            }
-        }
-        #toggleImage {
-            width: 35px;
-            height: 35px;
-            border-radius: 20rem;
-        }
-        .container {
-            text-align: center;
-        }
-        img {
-            cursor: pointer;
-            width: 300px;
-            height: 300px;
-            transition: filter 0.5s;
-        }
-        p {
-            font-size: 20px;
-            transition: color 0.5s;
-        }
-        a {
-            display: block;
-            margin: 10px 0;
-            font-size: 20px;
-            transition: color 0.5s;
-            text-decoration: none;
-        }
-        body.light-mode {
-            background-color: rgb(173, 78, 103);
-        }
-        body.dark-mode {
-            background-color: #4676b4;
-        }
-        body.light-mode img {
-            filter: brightness(1);
-        }
-        body.dark-mode img {
-            filter: brightness(0.5);
-        }
-        body.light-mode p {
-            color: rgb(173, 78, 103);
-        }
-        body.dark-mode p {
-            color: #4676b4;
-        }
-        body.light-mode a {
-            color: rgb(173, 78, 103);
-        }
-        body.dark-mode a {
-            color: #4676b4;
-        }
-        body.light-mode animate {
-            color: rgb(173, 78, 103);
-        }
-        body.dark-mode animate {
-            color: #4676b4;
-        }
-    </style> 
 </head>
 <body>
     <div class="header">
         <nav id="toggleText" class="nav-bar">
             <h1 class="page" id="logo">Esraa Emary</h1>
-            <a id="toggleLink1" class="page" href="Portfolio-home.html">Home</a>
-            <a id="toggleLink2" class="page" href="Portfolio-about.html">About</a>
-            <a id="toggleLink3" class="page" href="Portfolio-projects.html">Projects</a>
-            <a id="toggleLink4" class="page" href="Portfolio-contact.html">Contact</a>
-            <div class="container">
-                <img id="toggleImage" src="https://downloadwap.com/thumbs2/wallpapers/p2ls/2019/patterns/36/5e39c82813558698.jpg" alt="Image" onclick="toggleMode()">
-            </div>
+            <a class="page" href="index.html">Home</a>
+            <a class="page" href="index2.html">About</a>
+            <a class="page" href="index3.html">Projects</a>
+            <a class="page" href="index4.html">Contact</a>
+            <label class="switch">
+                <input onclick="toggleMode()" type="checkbox">
+                <div class="slider"></div>
+                <div class="slider-card">
+                  <div class="slider-card-face slider-card-front"></div>
+                  <div class="slider-card-face slider-card-back"></div>
+                </div>
+              </label>
         </nav>
     </div>
     <div class="snow-container"></div>
@@ -177,56 +32,5 @@
             <h1>Software Engineer</h1>
         </div>
     </div>
-    <script>
-            document.addEventListener('DOMContentLoaded', () => {
-            const snowContainer = document.querySelector('.snow-container');
-            const snowflakeCount = 50;
-        
-            for (let i = 0; i < snowflakeCount; i++) {
-                const snowflake = document.createElement('img');
-                snowflake.src = 'https://e7.pngegg.com/pngimages/512/999/png-clipart-dot-dot-thumbnail.png';
-                snowflake.classList.add('snowflake');
-                snowflake.style.left = Math.random() * 100 + 'vw';
-                snowflake.style.animationDuration = (Math.random() * 3 + 2) + 's';
-                snowflake.style.opacity = Math.random();
-                snowContainer.appendChild(snowflake);
-            }
-        });
-        
-        let isDarkMode = false;
-        
-        function toggleMode() {
-            const body = document.body;
-            const image = document.getElementById('toggleImage');
-            const text = document.getElementById('toggleText');
-            const links = document.querySelectorAll('a');
-            const effects = document.querySelectorAll('animate');
-        
-            if (isDarkMode) {
-                body.classList.remove('dark-mode');
-                body.classList.add('light-mode');
-                image.src = 'https://downloadwap.com/thumbs2/wallpapers/p2ls/2019/patterns/36/5e39c82813558698.jpg';
-                text.style.color = 'rgb(173, 78, 103)';
-                links.forEach(link => link.style.color = 'rgb(173, 78, 103)');
-                effects.forEach(effect => effect.style.color = 'rgb(173, 78, 103)');
-            } else {
-                body.classList.remove('light-mode');
-                body.classList.add('dark-mode');
-                image.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP3stcutdnf7XqmHZQJDoauul1FiQqifpGJLnEHX6VqMnsk8HMopx3xd4J8AgAfZa9ngM&usqp=CAU';
-                text.style.color = '#4676b4';
-                links.forEach(link => link.style.color = '#4676b4');
-                effects.forEach(effect => effect.style.color = '#4676b4');
-            }
-        
-            isDarkMode = !isDarkMode;
-        }
-        
-        document.addEventListener('DOMContentLoaded', () => {
-            document.body.classList.add('light-mode');
-            document.getElementById('toggleText').style.color = 'rgb(173, 78, 103)';
-            document.querySelectorAll('a').forEach(link => link.style.color = 'rgb(173, 78, 103)');
-            document.querySelectorAll('animate').forEach(effect => effect.style.color = 'rgb(173, 78, 103)');
-        });
-    </script>
 </body>
 </html>

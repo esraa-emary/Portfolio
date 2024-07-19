@@ -1,14 +1,14 @@
 // ==================== Home ====================
 document.addEventListener('DOMContentLoaded', () => {
     const snowContainer = document.querySelector('.snow-container');
-    const snowflakeCount = 50;
+    const snowflakeCount = 15;
 
     for (let i = 0; i < snowflakeCount; i++) {
         const snowflake = document.createElement('img');
         snowflake.src = 'https://e7.pngegg.com/pngimages/512/999/png-clipart-dot-dot-thumbnail.png';
         snowflake.classList.add('snowflake');
         snowflake.style.left = Math.random() * 100 + 'vw';
-        snowflake.style.animationDuration = (Math.random() * 3 + 2) + 's';
+        snowflake.style.animationDuration = (Math.random() * 10 + 2) + 's';
         snowflake.style.opacity = Math.random();
         snowContainer.appendChild(snowflake);
         const snowflake2 = document.createElement('img');
@@ -71,3 +71,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // ==================== Anout ====================
+
+
+// ==================== Projects ====================
+
+
+// ==================== Contact ====================
+
+
+// ==================== Footer ====================
+
+

@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    overflow: hidden; 
+}
+
 body {
     transition: background-color 0.5s;
     position: relative;
@@ -100,7 +105,7 @@ body {
 
 .slider-card-back {
     background-color: #000;
-    transform: rotateY(180deg);
+    transform: rotateY(100deg);
 }
 
 input:checked ~ .slider-card .slider-card-back {
@@ -108,7 +113,7 @@ input:checked ~ .slider-card .slider-card-back {
 }
 
 input:checked ~ .slider-card .slider-card-front {
-    transform: rotateY(-100deg);
+    transform: rotateY(100deg);
 }
 
 input:checked ~ .slider-card {
@@ -143,7 +148,6 @@ p {
 
 a {
     display: block;
-    margin: 10px 0;
     font-size: 20px;
     transition: color 0.5s;
     text-decoration: none;
@@ -264,12 +268,12 @@ h1 .Home{
 
 @keyframes fall {
     0% {
-        top: 0px;
+        top: 5px;
         transform: translateX(0%) rotate(0deg);
     }
     100% {
-        top: 90vh;
-        transform: translateX(0%) rotate(50deg);
+        top: 95vh;
+        transform: translateX(0%) rotate(0deg);
     }
 }
 

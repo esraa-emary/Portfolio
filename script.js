@@ -25,10 +25,9 @@ let isDarkMode = false;
 
 function toggleMode() {
     const body = document.body;
-    const image = document.getElementById('toggleImage');
     const text = document.getElementById('toggleText');
     const links = document.querySelectorAll('a');
-    const effects = document.querySelectorAll('animate');
+    const effects = document.querySelectorAll('h3');
     const effe = document.querySelectorAll('h1');
     const link = document.getElementById('logo');
     const lin = document.getElementById('toggleText');
@@ -36,21 +35,21 @@ function toggleMode() {
     if (isDarkMode) {
         body.classList.remove('dark-mode');
         body.classList.add('light-mode');
-        text.style.color = 'rgb(202, 117, 170)';
-        links.forEach(link => link.style.color = 'rgb(202, 117, 170)');
-        effects.forEach(effect => effect.style.color = 'rgb(202, 117, 170)');
-        effe.forEach(effect => effect.style.color = '#000');
-        link.style.color = 'rgb(202, 117, 170)';
-        lin.style.backgroundColor = '#000';
+        text.style.color = '#000';
+        links.forEach(link => link.style.color = '#000');
+        effects.forEach(effect => effect.style.color = 'rgb(186, 233, 215)');
+        effe.forEach(effect => effect.style.color = 'rgb(186, 233, 215)');
+        link.style.color = '#000';
+        lin.style.backgroundColor = 'rgb(186, 233, 215)';
     } else {
         body.classList.remove('light-mode');
         body.classList.add('dark-mode');
-        text.style.color = '#000';
-        links.forEach(link => link.style.color = '#000');
+        text.style.color = 'rgb(186, 233, 215)';
+        links.forEach(link => link.style.color = 'rgb(186, 233, 215)');
         effects.forEach(effect => effect.style.color = '#000');
-        effe.forEach(effect => effect.style.color = 'rgb(202, 117, 170)');
-        logo.style.color = '#000';
-        lin.style.backgroundColor = 'rgb(202, 117, 170)';
+        effe.forEach(effect => effect.style.color = '#000');
+        logo.style.color = 'rgb(186, 233, 215)';
+        lin.style.backgroundColor = '#000';
     }
 
     isDarkMode = !isDarkMode;
@@ -58,17 +57,13 @@ function toggleMode() {
 
 document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.add('light-mode');
-    document.getElementById('toggleText').style.color = 'rgb(202, 117, 170)';
-    document.querySelectorAll('a').forEach(link => link.style.color = 'rgb(202, 117, 170)');
-    document.querySelectorAll('animate').forEach(effect => effect.style.color = 'rgb(202, 117, 170)');
-    document.querySelectorAll('h1').forEach(effe => effe.style.color = '#000');
-    document.getElementById('logo').style.color = 'rgb(202, 117, 170)';
-    document.getElementById('toggleText').style.backgroundColor = '#000';
+    document.getElementById('toggleText').style.color = '#000';
+    document.querySelectorAll('a').forEach(link => link.style.color = '#000');
+    document.querySelectorAll('h3').forEach(effect => effect.style.color = 'rgb(186, 233, 215)');
+    document.querySelectorAll('h1').forEach(effe => effe.style.color = 'rgb(186, 233, 215)');
+    document.getElementById('logo').style.color = '#000';
+    document.getElementById('toggleText').style.backgroundColor = 'rgb(186, 233, 215)';
 });
-
-
-
-
 
 // ==================== Anout ====================
 
@@ -80,5 +75,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // ==================== Footer ====================
-
-

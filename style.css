@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100hv;
-    overflow: hidden; 
-}
-
 body {
     transition: background-color 0.5s;
     position: relative;
@@ -41,7 +36,6 @@ header{
     gap: 20px;
     padding: 20px;
     background: #000;
-    color: rgb(202, 117, 170);
 }
 
 #logo {
@@ -49,7 +43,7 @@ header{
 }
 
 .nav-bar a {
-    color: rgb(202, 117, 170);
+    color: rgb(186, 189, 233);
     font-size: 20px;
     text-decoration: none;
 }
@@ -108,11 +102,11 @@ header{
 }
 
 .slider-card-front {
-    background-color: rgb(202, 117, 170);
+    background-color: #000;
 }
 
 .slider-card-back {
-    background-color: #000;
+    background-color: rgb(186, 233, 215);
     transform: rotateY(100deg);
 }
 
@@ -142,13 +136,6 @@ input:checked ~ .slider {
     text-align: center;
 }
 
-img {
-    cursor: pointer;
-    width: 300px;
-    height: 300px;
-    transition: filter 0.5s;
-}
-
 p {
     font-size: 20px;
     transition: color 0.5s;
@@ -162,11 +149,11 @@ a {
 }
 
 body.light-mode {
-    background-color: rgb(202, 117, 170);
+    background-color: #000;
 }
 
 body.dark-mode {
-    background-color: #000;
+    background-color: rgb(186, 233, 215);
 }
 
 body.light-mode img {
@@ -178,11 +165,11 @@ body.dark-mode img {
 }
 
 body.light-mode p {
-    color: #000;
+    color: rgb(186, 233, 215);
 }
 
 body.dark-mode p {
-    color: rgb(202, 117, 170);
+    color: #000;
 }
 
 .Home {
@@ -195,36 +182,36 @@ body.dark-mode .Home {
 
 @keyframes transLight {
     0% {
-        background: #000;
+        background: rgb(186, 233, 215);
     }
     100% {
-        background: rgb(202, 117, 170);
+        background: #000;
     }
 }
 
 @keyframes transDark {
     0% {
-        background: rgb(202, 117, 170);
+        background: #000;
     }
     100% {
-        background: #000;
+        background: rgb(186, 233, 215);
     }
 }
 
 body.light-mode a {
-    color: #000;
+    color: rgb(186, 233, 215);
 }
 
 body.dark-mode a {
-    color: rgb(202, 117, 170);
+    color: rgb(0, 0, 0);
 }
 
 body.light-mode animate {
-    color: #000;
+    color: rgb(186, 233, 215);
 }
 
 body.dark-mode animate {
-    color: rgb(202, 117, 170);
+    color: #000;
 }
 
 /* ==================== Home ==================== */
@@ -288,7 +275,84 @@ h1 .Home{
 
 /* ==================== About ==================== */
 
+.Overview{
+    display: flex;
+    padding: 5rem;
+    align-items: center;
+    gap: 5rem;
+}
 
+#overview{
+    font-size: 2rem;
+}
+
+.slider2 {
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+    position: relative; 
+}
+
+.slides {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.slide {
+    position: absolute;
+    opacity: 0;
+    inset: 0;
+    animation: slider-show 12s infinite; 
+}
+
+.slide2 {
+    animation-delay: 0s; 
+}
+
+.slide1 {
+    animation-delay: 4s; 
+}
+
+.slide5 {
+    animation-delay: 8s; 
+}
+
+@keyframes slider-show {
+    0%, 16.66% {
+        opacity: 0;
+    }
+    16.66%, 33.33% {
+        opacity: 1;
+    }
+    33.33%, 100% {
+        opacity: 0;
+    }
+}
+
+.Overview img{
+    border-radius: 10rem;
+}
+
+.About{
+    font-size: 4rem;
+}
+
+.Languages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.r{
+    display: flex;
+    flex-direction: row;
+}
+
+.mylang{
+    font-size: 2rem;
+    margin: 5rem;
+}
 
 /* ==================== Projects ==================== */
 
@@ -308,7 +372,7 @@ h1 .Home{
 }
 
 #form{
-    border: #fff solid 5px;
+    border: gray solid 5px;
     padding: 20px;
     border-radius: 20px;
     position: relative;
@@ -323,18 +387,18 @@ h1 .Home{
 .form-control1 input {
     background-color: transparent;
     border: 0;
-    border-bottom: 2px #fff solid;
+    border-bottom: 2px gray solid;
     display: block;
     width: 100%;
     padding: 15px 0;
     font-size: 18px;
-    color: #fff;
+    color: gray;
 }
   
 .form-control1 input:focus,
 .form-control1 input:valid {
     outline: 0;
-    border-bottom-color: lightblue;
+    border-bottom-color: gray;
 }
   
 .form-control1 label {
@@ -348,13 +412,13 @@ h1 .Home{
     display: inline-block;
     font-size: 18px;
     min-width: 5px;
-    color: #fff;
+    color: gray;
     transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
   
 .form-control1 input:focus+label span,
 .form-control1 input:valid+label span {
-    color: lightblue;
+    color: gray;
     transform: translateY(-30px);
 }
 
@@ -367,18 +431,18 @@ h1 .Home{
 .form-control2 input {
     background-color: transparent;
     border: 0;
-    border-bottom: 2px #fff solid;
+    border-bottom: 2px gray solid;
     display: block;
     width: 100%;
     padding: 15px 0;
     font-size: 18px;
-    color: #fff;
+    color: gray;
 }
   
 .form-control2 input:focus,
 .form-control2 input:valid {
     outline: 0;
-    border-bottom-color: lightblue;
+    border-bottom-color: gray;
 }
   
 .form-control2 label {
@@ -392,13 +456,13 @@ h1 .Home{
     display: inline-block;
     font-size: 18px;
     min-width: 5px;
-    color: #fff;
+    color: gray;
     transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
   
 .form-control2 input:focus+label span,
 .form-control2 input:valid+label span {
-    color: lightblue;
+    color: gray;
     transform: translateY(-30px);
 }
 
@@ -411,18 +475,18 @@ h1 .Home{
 .form-control3 input {
     background-color: transparent;
     border: 0;
-    border-bottom: 2px #fff solid;
+    border-bottom: 2px gray solid;
     display: block;
     width: 100%;
     padding: 15px 0;
     font-size: 18px;
-    color: #fff;
+    color: gray;
 }
   
 .form-control3 input:focus,
 .form-control3 input:valid {
     outline: 0;
-    border-bottom-color: lightblue;
+    border-bottom-color: gray;
 }
   
 .form-control3 label {
@@ -436,13 +500,13 @@ h1 .Home{
     display: inline-block;
     font-size: 18px;
     min-width: 5px;
-    color: #fff;
+    color: gray;
     transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
   
 .form-control3 input:focus+label span,
 .form-control3 input:valid+label span {
-    color: lightblue;
+    color: gray;
     transform: translateY(-30px);
 }
 
@@ -455,18 +519,18 @@ h1 .Home{
 .form-control4 input {
     background-color: transparent;
     border: 0;
-    border-bottom: 2px #fff solid;
+    border-bottom: 2px gray solid;
     display: block;
     width: 100%;
     padding: 15px 0;
     font-size: 18px;
-    color: #fff;
+    color: gray;
 }
   
 .form-control4 input:focus,
 .form-control4 input:valid {
     outline: 0;
-    border-bottom-color: lightblue;
+    border-bottom-color: gray;
 }
   
 .form-control4 label {
@@ -480,13 +544,13 @@ h1 .Home{
     display: inline-block;
     font-size: 18px;
     min-width: 5px;
-    color: #fff;
+    color: gray;
     transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
   
 .form-control4 input:focus+label span,
 .form-control4 input:valid+label span {
-    color: lightblue;
+    color: gray;
     transform: translateY(-30px);
 }
 
@@ -649,7 +713,7 @@ h1 .Home{
     filter: drop-shadow(-5px -5px 7px #ff5500b4);
 }
   
-  .cloud:nth-of-type(4) {
+.cloud:nth-of-type(4) {
     left: 17rem;
     top: 1rem;
     width: 3.4rem;

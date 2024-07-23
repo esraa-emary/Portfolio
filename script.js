@@ -119,7 +119,8 @@ function game() {
     `<div class='line'>
         <h1 class='tit'>100 Game</h1>
         <div class='jdiv'>
-            <p>Two players start from 0 and alternatively add a number from 1 to 10 to the sum. The player who reaches 100 wins.</p>
+            <p>Two players start from 0 and alternatively add a number from 1 to 10 to the sum. <br>
+             The player who reaches 100 wins.</p>
             <a href="https://github.com/esraa-emary/100-Game" target="_blank"><button>Link</button></a>
         </div>   
     </div>`;

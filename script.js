@@ -1,8 +1,8 @@
 // ==================== Home ====================
+
 document.addEventListener('DOMContentLoaded', () => {
     const snowContainer = document.querySelector('.snow-container');
     const snowflakeCount = 15;
-
     for (let i = 0; i < snowflakeCount; i++) {
         const snowflake = document.createElement('img');
         snowflake.src = 'https://e7.pngegg.com/pngimages/512/999/png-clipart-dot-dot-thumbnail.png';
@@ -70,8 +70,81 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // ==================== Projects ====================
 
+function cipher() {
+    document.getElementById('vline').innerHTML = 
+    `<div class='line'>
+        <h1 class='tit'>Ciphers and Deciphers</h1>
+        <div class='jdiv'>
+            <p>This program is for encryption your important information and decrypt it.</p>
+            <a href="https://github.com/esraa-emary/Ciphers-and-Deciphers" target="_blank"><button>Link</button></a>
+        </div>
+    </div>`;    
+}
+
+function binary() {
+    document.getElementById('vline').innerHTML = 
+    `<div class='line'>
+        <h1 class='tit'>Binary Operations</h1>
+        <div class='jdiv'>
+            <p>It is a program that apply one's complement , two's complement , addition and subtraction.</p>
+            <a href="https://github.com/esraa-emary/Binary-Operations" target="_blank"><button>Link</button></a>
+        </div>    
+    </div>`;
+}
+
+function photo() {
+    document.getElementById('vline').innerHTML =
+    `<div class='line'>
+        <h1 class='tit'>Photo Editor</h1>
+        <div class='jdiv'>
+            <p>This program applies some effects to photos.</p>
+            <a href="https://github.com/esraa-emary/Photo-Editor" target="_blank"><button>Link</button></a>
+        </div>   
+    </div>`;
+}
+
+function beach() {
+    document.getElementById('vline').innerHTML = 
+    `<div class='line'>
+        <h1 class='tit'>Glass Beach</h1>
+        <div class='jdiv'>
+            <p>This project represent a Glass Beach page with HTML,CSS and JAVA SCRIPT.</p>
+            <a href="https://glass-beach-git-main-esraa-emarys-projects.vercel.app/" target="_blank"><button>Link</button></a>
+        </div>    
+    </div>`;
+}
+
+function game() {
+    document.getElementById('vline').innerHTML =
+    `<div class='line'>
+        <h1 class='tit'>100 Game</h1>
+        <div class='jdiv'>
+            <p>Two players start from 0 and alternatively add a number from 1 to 10 to the sum. The player who reaches 100 wins.</p>
+            <a href="https://github.com/esraa-emary/100-Game" target="_blank"><button>Link</button></a>
+        </div>   
+    </div>`;
+}
+
+function connect() {
+    document.getElementById('vline').innerHTML = 
+    `<div class='line'>
+        <h1 class='tit'>Connect 4</h1>
+        <div class='jdiv'>
+            <p>It is a game that when you put 4 x in any shap or 4 o in any shap , you win.</p>
+            <a href="https://github.com/esraa-emary/Connect-4" target="_blank"><button>Link</button></a>
+        </div>   
+    </div>`;
+}
+
+function star() {
+    document.getElementById('vline').innerHTML =
+    `<div class='line'>
+        <h1 class='tit'>STAR</h1>
+        <div class='jdiv'>
+            <p>This project represent a STAR page with HTML,CSS and JAVA SCRIPT.</p>
+            <a href="https://star-git-main-esraa-emarys-projects.vercel.app/" target="_blank"><button>Link</button></a>
+        </div>   
+    </div>`;
+}
 
 // ==================== Contact ====================
-
-
-// ==================== Footer ====================

@@ -41,7 +41,28 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('name2').style.color = '#000';
 });
 
+// ====================================== home ====================================== //
 
+document.addEventListener('DOMContentLoaded', () => {
+    const snowContainer = document.querySelector('.snow-container');
+    const snowflakeCount = 15;
+    for (let i = 0; i < snowflakeCount; i++) {
+        const snowflake = document.createElement('img');
+        snowflake.src = 'https://github.com/esraa-emary/photos/blob/main/blue.png?raw=true';
+        snowflake.classList.add('snowflake');
+        snowflake.style.left = Math.random() * 100 + 'vw';
+        snowflake.style.animationDuration = (Math.random() * 10 + 2) + 's';
+        snowflake.style.opacity = Math.random();
+        snowContainer.appendChild(snowflake);
+        const snowflake2 = document.createElement('img');
+        snowflake2.src = 'https://github.com/esraa-emary/photos/blob/main/pink.png?raw=true';
+        snowflake2.classList.add('snowflake2');
+        snowflake2.style.left = Math.random() * 100 + 'vw';
+        snowflake2.style.animationDuration = (Math.random() * 10 + 2) + 's';
+        snowflake2.style.opacity = Math.random();
+        snowContainer.appendChild(snowflake2);
+    }
+});
 
 
 

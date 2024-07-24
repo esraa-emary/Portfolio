@@ -258,6 +258,35 @@ body.dark-mode p {
     }
 }
 
+.snowflake {
+    position: absolute;
+    top: 0px;
+    transform: translateX(0%);
+    animation: fall 5s linear infinite;
+    border-radius: 15rem;
+    width: 15px;
+    height: 15px;
+}
+
+.snowflake2 {
+    position: absolute;
+    top: 0px;
+    transform: translateX(0%);
+    animation: fall 5s linear infinite;
+    border-radius: 15rem;
+    width: 15px;
+    height: 15px;
+}
+
+@keyframes fall {
+    0% {
+        top: 0px;
+    }
+    100% {
+        top: 100vh;
+    }
+}
+
 /* ==================== About ==================== */
 
 .Overview {

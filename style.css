@@ -55,7 +55,7 @@ header{
     font-size: 20px;
     gap: 20px;
     padding: 20px;
-    background: #000; 
+    background: linear-gradient(to right,#000 ,#000,#000, #9e225c, rgb(75, 124, 196) , #9e225c, rgb(75, 124, 196) ,#000,#000,#000 );
 }
 
 #logo {
@@ -223,38 +223,53 @@ body.dark-mode p {
     color: #000;
 }
 
-.Home {
-    animation: trans 5s forwards;
+.snowflake {
+    position: absolute;
+    top: 0px;
+    transform: translateX(0%);
+    animation: fall 5s linear infinite;
+    border-radius: 15rem;
+    width: 15px;
+    height: 15px;
 }
 
-@keyframes trans {
+.snowflake2 {
+    position: absolute;
+    top: 0px;
+    transform: translateX(0%);
+    animation: fall 5s linear infinite;
+    border-radius: 15rem;
+    width: 15px;
+    height: 15px;
+}
+
+@keyframes fall {
     0% {
-        background: #000;
-    }
-    5% {
-        background-repeat:no-repeat;
-        background-size: cover;
-        background-image: url("https://t3.ftcdn.net/jpg/02/60/07/86/360_F_260078608_hjr89nGjcv2NpDQHQGWsvsSaGuN377sf.jpg");
-    }
-    25% {
-        background-repeat:no-repeat;
-        background-size: cover;
-        background-image: url("https://t3.ftcdn.net/jpg/02/60/07/86/360_F_260078608_hjr89nGjcv2NpDQHQGWsvsSaGuN377sf.jpg");
-    }
-    50% {
-        background-repeat:no-repeat;
-        background-size: cover;
-        background-image: url("https://t3.ftcdn.net/jpg/02/60/07/86/360_F_260078608_hjr89nGjcv2NpDQHQGWsvsSaGuN377sf.jpg");
-    }
-    75% {
-        background-repeat:no-repeat;
-        background-size: cover;
-        background-image: url("https://t3.ftcdn.net/jpg/02/60/07/86/360_F_260078608_hjr89nGjcv2NpDQHQGWsvsSaGuN377sf.jpg");
+        top: 0px;
     }
     100% {
-        background-repeat:no-repeat;
-        background-size: cover;
-        background-image: url("https://t3.ftcdn.net/jpg/02/60/07/86/360_F_260078608_hjr89nGjcv2NpDQHQGWsvsSaGuN377sf.jpg");
+        top: 100vh;
+    }
+}
+
+#name,
+#name2 {
+    animation: transDark 5s linear;
+    transition: all 2s ease;
+}
+
+@keyframes transDark {
+    0% {
+        color: #000;
+    }
+    5% {
+        color: #000;
+    }
+    10% {
+        color: #000;
+    }
+    100% {
+        columns: #9e225c;
     }
 }
 
@@ -336,7 +351,7 @@ body.dark-mode p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 0 5rem 0;
+    margin: 5rem 0 5rem 0;
 }
 
 .r {

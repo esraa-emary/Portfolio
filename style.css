@@ -417,7 +417,7 @@ body.dark-mode p {
     padding: 5rem;
     align-items: center;
     gap: 5rem;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 #speech{

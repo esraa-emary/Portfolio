@@ -414,10 +414,9 @@ body.dark-mode p {
 
 .Contact{
     display: flex;
-    padding: 5rem;
+    padding: 5rem 0rem;
     align-items: center;
-    gap: 5rem;
-    justify-content: space-between;
+    gap: 10rem;
 }
 
 #speech{

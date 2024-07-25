@@ -65,6 +65,7 @@ header{
 .nav-bar a {
     font-size: 20px;
     text-decoration: none;
+    transition: 350ms;
 }
 
 .nav-bar a:hover {
@@ -344,6 +345,11 @@ body.dark-mode p {
     display: flex;
     flex-direction: row;
     gap: 40px;
+    img {
+        transition: 350ms;
+        width: 60px;
+        height: 60px;
+    }
 }
 
 .mylang {
@@ -399,6 +405,7 @@ body.dark-mode p {
 .project a {
     font-size: 1rem;
     text-decoration: none;
+    transition: 350ms;
 }
 
 .project a:hover {
@@ -440,6 +447,7 @@ body.dark-mode p {
 .accounts img{
     width: 50px;
     height: 50px;
+    transition: 350ms;
 }
 
 .accounts img:hover{

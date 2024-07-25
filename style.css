@@ -199,9 +199,7 @@ body.dark-mode p {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100%;
     position: relative;
-    padding: 31% 0;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

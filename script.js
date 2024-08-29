@@ -6,7 +6,7 @@ function toggleMode() {
     const text = document.getElementById('toggleText');
     const links = document.querySelectorAll('a');
     const p = document.querySelectorAll('p');
-    const h3 = document.querySelectorAll('h3');
+    const h3 = document.querySelectorAll('h2');
     const h1 = document.querySelectorAll('h1');
     const logo = document.getElementById('name');
 
@@ -30,7 +30,7 @@ function toggleMode() {
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('toggleText').style.color = '#9e225c';
     document.querySelectorAll('a').forEach(link => link.style.color = '#9e225c');
-    document.querySelectorAll('h3').forEach(effect => effect.style.color = '#9e225c');
+    document.querySelectorAll('h2').forEach(effect => effect.style.color = '#9e225c');
     document.querySelectorAll('h1').forEach(effe => effe.style.color = '#9e225c');
 });
 
@@ -43,19 +43,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const snowflake = document.createElement('img');
         snowflake.src = 'https://github.com/esraa-emary/photos/blob/main/blue.png?raw=true';
         snowflake.classList.add('snowflake');
-        snowflake.style.left = Math.random() * 100 + 'vw';
+        snowflake.style.left = Math.random() * 97 + 'vw';
         snowflake.style.animationDuration = (Math.random() * 10 + 2) + 's';
         snowflake.style.opacity = Math.random();
         snowContainer.appendChild(snowflake);
         const snowflake2 = document.createElement('img');
         snowflake2.src = 'https://github.com/esraa-emary/photos/blob/main/pink.png?raw=true';
         snowflake2.classList.add('snowflake2');
-        snowflake2.style.left = Math.random() * 100 + 'vw';
+        snowflake2.style.left = Math.random() * 97 + 'vw';
         snowflake2.style.animationDuration = (Math.random() * 10 + 2) + 's';
         snowflake2.style.opacity = Math.random();
         snowContainer.appendChild(snowflake2);
     }
 });
-
-
-

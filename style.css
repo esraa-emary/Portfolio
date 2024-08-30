@@ -426,16 +426,9 @@ body.dark-mode p {
     height: 250px;
 }
 
-.slidecard:hover{
-    scale: 1.02;
-    box-shadow: 0 0 5rem #fff;
-}
-
-.slidecard2:hover{
-    width: 425px;
-    height: 270px;
-    transition: all 0.3s;
-    box-shadow: 0 0 5rem #fff;
+.slidecard:hover, .slidecard2:hover{
+    scale: 1.025;
+    box-shadow: 0 0 2.5rem #fff;
 }
 
 .part{

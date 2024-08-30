@@ -348,9 +348,10 @@ body.dark-mode p {
 
 .ed3{
     margin: 0 0 2rem 0;
-    p{
-        margin: 0 0 1rem 0;
-    }
+}
+
+.edu3 p{
+    margin: 0 0 1rem 0;
 }
 
 .educ2{

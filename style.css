@@ -261,11 +261,6 @@ body.dark-mode p {
     font-size: 1.25rem;
 }
 
-.hh{
-    border: #3d3c3c solid 1px;
-    width: 100%;
-}
-
 /* ==================== about, skills ==================== */
 
 .about{
@@ -295,10 +290,9 @@ body.dark-mode p {
     width: 900px;
     align-items: center;
     margin: 0 0 2rem 0;
-}
-
-.ab2 p{
-    margin: 0 0 1rem 0;
+    p{
+        margin: 0 0 1rem 0;
+    }
 }
 
 .Languages{
@@ -324,14 +318,13 @@ body.dark-mode p {
         transition: 350ms;
         width: 50px;
         height: 50px;
+        transition: all 0.2s;
     }
 }
 
 .r img:hover {
-    width: 60px;
-    height: 60px;
+    scale: 1.15;
     box-shadow: 0 0 5rem #fff;
-    transition: all 0.2s;
 }
 
 .Languages .ab1{
@@ -355,16 +348,15 @@ body.dark-mode p {
 
 .ed3{
     margin: 0 0 2rem 0;
+    p{
+        margin: 0 0 1rem 0;
+    }
 }
 
 .educ2{
     display: flex;
     align-items:center ;
     justify-content: center;
-}
-
-.edu3 p{
-    margin: 0 0 1rem 0;
 }
 
 .bord{
@@ -380,15 +372,14 @@ body.dark-mode p {
     background-repeat:no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    img{
+        margin: 0 0 1.5rem 0;
+        width: 350px;
+    }
 }
 
 .pprojects2,.pprojects1{
     padding:  0 0 3rem 0;
-}
-
-.pprojects img{
-    margin: 0 0 1.5rem 0;
-    width: 350px;
 }
 
 .projects-front,.projects-coding{
@@ -422,6 +413,7 @@ body.dark-mode p {
     align-items: center;
     border: 3px solid;
     border-image: linear-gradient(to right,#9e225c, rgb(75, 124, 196)) 1;
+    transition: all 0.3s;
 }
 
 .slidecard{
@@ -435,9 +427,7 @@ body.dark-mode p {
 }
 
 .slidecard:hover{
-    width: 450px;
-    height: 440px;
-    transition: all 0.3s;
+    scale: 1.02;
     box-shadow: 0 0 5rem #fff;
 }
 
@@ -681,13 +671,12 @@ strong {
     height: 420px;
     border: 3px solid;
     border-image: linear-gradient(to right,#9e225c, rgb(75, 124, 196)) 1;
+    transition: all 0.3s;
 }
 
 .slidecard3:hover{
-    width: 450px;
-    height: 440px;
-    transition: all 0.3s;
-    box-shadow: 0 0 5rem #fff;
+    scale: 1.015;
+    box-shadow: 0 0 2.5rem #fff;
 }
 
 .tit2{
@@ -711,15 +700,12 @@ strong {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    bottom: 0;
-    padding: 0 0 2rem 0;
+    padding: 1.5rem 0rem 0rem;
 }
 
 .acc{
     display: flex;
-    gap: 40px;
-    margin: 0 0 2rem 0;
+    gap: 4rem;
 }
 
 .acc img{
@@ -729,18 +715,19 @@ strong {
 }
 
 .acc img:hover{
-    width: 60px;
-    height: 60px;
-    box-shadow: 0 0 5rem #fff;
+    scale: 1.15;
+    box-shadow: 0 0 2.5rem #fff;
 }
 
 .fi{
     font-family: Pristina;
-    font-size: 9rem;
+    font-size: 8rem;
+    text-align: center;
 }
 
 .accounts p{
     font-size: 1.25rem;
+    padding: 2.5rem 0rem 0rem;
 }
 
 /* //////////////////////////////////////////////////////////////////// */

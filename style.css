@@ -269,7 +269,7 @@ body.dark-mode p {
 /* ==================== about, skills ==================== */
 
 .about{
-    padding: 0 0 5rem 0 ;
+    padding: 0 0 3rem 0 ;
     display: flex;
     flex-direction: column;
 }
@@ -383,7 +383,7 @@ body.dark-mode p {
 }
 
 .pprojects2,.pprojects1{
-    padding:  0 0 5rem 0;
+    padding:  0 0 3rem 0;
 }
 
 .pprojects img{
@@ -402,10 +402,6 @@ body.dark-mode p {
 .projects-coding{
     display: flex;
     flex-direction: column;
-}
-
-.pprojects .ab1,.certificates .ab1{
-    margin: 5rem 0 5rem 0;
 }
 
 .pr2{
@@ -798,7 +794,7 @@ p{
 
     .ab2{
         width: 700px;
-        margin: 0 0 2rem 0;
+        margin: 0 0 0 0;
     }
     
     .ab2 p{
@@ -864,7 +860,7 @@ p{
     }
 
     .ab1{
-        margin: 7rem 0 4rem 0;
+        margin: 5rem 0 2rem 0;
     }
     
     .slidecard2:hover{
@@ -952,6 +948,10 @@ p{
         font-size: 0.75rem;
     }
 
+    .Languages{
+        margin: 0;
+    }
+
     a{
         font-size: 0.6rem;
     }
@@ -970,7 +970,7 @@ p{
 
     .ab2{
         width: 500px;
-        margin: 0 0 2rem 0;
+        margin: 0 0 0 0;
     }
 
     .bord{
@@ -1003,7 +1003,7 @@ p{
     }
 
     .ab1{
-        margin: 5rem 0 3rem 0;
+        margin: 4rem 0 2rem 0;
     }
     
     .slidecard2:hover{
@@ -1102,7 +1102,7 @@ p{
 
     .ab2{
         width: 300px;
-        margin: 0 0 2rem 0;
+        margin: 0;
     }
 
     .r {
@@ -1151,7 +1151,7 @@ p{
     }
 
     .ab1{
-        margin: 5rem 0 2rem 0;
+        margin: 3rem 0 2rem 0;
         gap: 15px;
     }
     
@@ -1271,8 +1271,8 @@ p{
         font-size: 1rem;
     }
 
-    .about .part{
-        margin: 0 0 2rem 0;
+    .ab1{
+        margin: 2rem 0 1rem 0;
     }
 
     .ed3{
@@ -1295,12 +1295,16 @@ p{
         font-size: 0.4rem;
     }
 
-    .footer,.about,.projects-coding,.projects-front{
+    .about,.pprojects1,.pprojects2,.certificates{
         padding: 0 0 2rem 0;
     }
 
     .ab1{
-        margin: 2rem 0 0 0;
+        margin: 2rem 0 2rem 0;
+    }
+
+    .ab2{
+        margin: 0 0 0 0;
     }
 
     .switch{

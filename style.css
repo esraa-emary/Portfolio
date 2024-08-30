@@ -1317,7 +1317,7 @@ p{
     }
 
     .slidecard{
-        width: 90px;
+        width: 95px;
         height: 175px;
     }
     
@@ -1327,12 +1327,12 @@ p{
     }
     
     .slidecard:hover{
-        width: 135px;
-        height: 215px;
+        width: 100px;
+        height: 195px;
     }
     
     .slidecard2:hover{
-        width: 135px;
+        width: 95px;
         height: 160px;
     }
 

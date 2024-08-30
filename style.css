@@ -1333,7 +1333,7 @@ p{
     }
 
     .tit{
-        font-size: 0.5rem;
+        font-size: 0.4rem;
     }
 
     .education img{
@@ -1343,6 +1343,10 @@ p{
     .certificates img{
         width: 75px;
     }
+
+    .projects-front h1{
+        font-size: 0.7rem;
+    }
     
     .slidecard3{
         padding: 0 1rem;
@@ -1351,7 +1355,7 @@ p{
     }
 
     .tit2{
-        font-size: 0.4rem;
+        font-size: 0.3rem;
     }
     
     .slidecard3:hover{

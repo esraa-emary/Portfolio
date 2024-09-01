@@ -56,3 +56,30 @@ document.addEventListener('DOMContentLoaded', () => {
         snowContainer.appendChild(snowflake2);
     }
 });
+
+document.getElementById("expand-cer").addEventListener("click", function() {
+    var myDiv = document.getElementById("cer-exp");
+    if (myDiv.style.display === "" || myDiv.style.display === "none") {
+        myDiv.style.display = "block";
+    } else {
+        myDiv.style.display = "none";
+    }
+});
+
+document.getElementById("expand-code").addEventListener("click", function() {
+    var myDiv = document.getElementById("code-exp");
+    if (myDiv.style.display === "" || myDiv.style.display === "none") {
+        myDiv.style.display = "block";
+    } else {
+        myDiv.style.display = "none";
+    }
+});
+
+document.getElementById("expand-front").addEventListener("click", function() {
+    var myDiv = document.getElementById("front-exp");
+    if (myDiv.style.display === "" || myDiv.style.display === "none") {
+        myDiv.style.display = "block";
+    } else {
+        myDiv.style.display = "none";
+    }
+});

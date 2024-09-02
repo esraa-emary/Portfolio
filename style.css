@@ -498,7 +498,7 @@ body.dark-mode p {
   
 strong {
     z-index: 2;
-    /* font-family: Pristina; */
+    font-family: Pristina;
     letter-spacing: 2px;
     color: #ffffff;
     text-shadow: 0 0 4px white;

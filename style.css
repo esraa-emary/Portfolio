@@ -498,8 +498,8 @@ body.dark-mode p {
   
 strong {
     z-index: 2;
-    font-family: Pristina;
-    letter-spacing: 5px;
+    /* font-family: Pristina; */
+    letter-spacing: 2px;
     color: #ffffff;
     text-shadow: 0 0 4px white;
 }
@@ -1036,12 +1036,12 @@ p{
     }
 
     .btn a{
-        font-size: 17px;
+        font-size: 1rem;
     }
 
     .btn{
         height: 2rem;
-        width: 8rem;
+        width: 9rem;
     }
 
     .acc img{
@@ -1196,12 +1196,12 @@ p{
     }
 
     .btn a{
-        font-size: 17px;
+        font-size: 0.7rem;
     }
 
     .btn{
-        height: 1.5rem;
-        width: 5rem;
+        height: 2rem;
+        width: 6rem;
     }
 
     .acc {
@@ -1345,11 +1345,11 @@ p{
     }
 
     .btn a{
-        font-size: 13px;
+        font-size: 0.4rem;
     }
 
     .btn{
-        height: 1.25rem;
+        height: 1.2rem;
         width: 4rem;
     }
 

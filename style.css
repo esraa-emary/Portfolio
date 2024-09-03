@@ -21,12 +21,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom,#9e225c, rgb(75, 124, 196));
+    background: linear-gradient(to bottom,#ee84af, #95e9c6);
     border-radius: 6px; 
 }
 
 p{
-    color: #9e225c;
+    color: #ee84af;
 }
 
 /* ==================== Header ==================== */
@@ -62,6 +62,47 @@ header{
     cursor: pointer;
     transform: scale(1.01,1.01);
 }
+
+.navbar{
+    display: none;
+}
+
+.navv{
+    display: flex;
+    gap: 20px;
+}
+
+.navbar__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar__links a {
+    text-decoration: none;
+}
+
+.navbar__toggle svg {
+    fill: #2b2a2a; 
+    width: 20px;
+    height: 20px;
+}
+
+.navbar__toggle:hover svg {
+    fill: #2b2a2a; 
+}
+
+.navbar__toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin: 0px;
+    padding: 0 20px 15px 0;
+    width: 0px;
+    height: 0px;
+} 
 
 .switch {
     --circle-dim: 1.4em;
@@ -112,11 +153,11 @@ header{
 }
 
 .slider-card-front {
-    background-color: #9e225c;
+    background-color: #ee84af;
 }
 
 .slider-card-back {
-    background-color: rgb(75, 124, 196);
+    background-color: #95e9c6;
     transform: rotateY(100deg);
 }
 
@@ -162,11 +203,11 @@ h1,h2,h3{
 }
 
 body.light-mode {
-    background-color: #9e225c;
+    background-color: #ee84af;
 }
 
 body.dark-mode {
-    background-color: rgb(75, 124, 196);
+    background-color: #95e9c6;
 }
 
 body.light-mode img {
@@ -178,11 +219,11 @@ body.dark-mode img {
 }
 
 body.light-mode p {
-    color: rgb(75, 124, 196);
+    color: #95e9c6;
 }
 
 body.dark-mode p {
-    color: #9e225c;
+    color: #ee84af;
 }
 
 /* ==================== Home ==================== */
@@ -231,7 +272,7 @@ body.dark-mode p {
         top: 0px;
     }
     100% {
-        top: 97vh;
+        top: 100vh;
     }
 }
 
@@ -252,7 +293,7 @@ body.dark-mode p {
         color: #000;
     }
     100% {
-        columns: #9e225c;
+        columns: #ee84af;
     }
 }
 
@@ -286,7 +327,7 @@ body.dark-mode p {
 }
 
 .ab2{
-    width: 900px;
+    width: 1000px;
     align-items: center;
     margin: 0 0 2rem 0;
 }
@@ -373,10 +414,10 @@ body.dark-mode p {
     padding:  0 0 3rem 0;
 }
 
-.pprojects img{
+.pprojects img,.certificates img{
     margin: 0 0 1.5rem 0;
-    width: 350px;
-    height: 170px;
+    width: 550px;
+    height: 260px;
 }
 
 .projects-front,.projects-coding{
@@ -394,7 +435,8 @@ body.dark-mode p {
 
 .pr2{
     display: flex;
-    gap: 1rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .p1,.p2{
@@ -402,23 +444,23 @@ body.dark-mode p {
     align-items: center;
 }
 
-.slidecard,.slidecard2{
+.slidecard,.slidecard2,.slidecard3{
     background: #000;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 3px solid;
-    border-image: linear-gradient(to right,#9e225c, rgb(75, 124, 196)) 1;
+    border: 1px solid;
+    border-image: linear-gradient(to right,#ee84af, #7af0bf) 1;
 }
 
-.slidecard{
-    width: 380px;
-    height: 420px;
+.slidecard,.slidecard3{
+    width: 600px;
+    height: 500px;
 }
 
 .slidecard2{
-    width: 420px;
+    width: 600px;
     height: 250px;
 }
 
@@ -451,11 +493,7 @@ body.dark-mode p {
     --color-shadow: #00000080;
 }
 
-.coding-details{
-    padding: 1rem 1rem;
-}
-
-.front-details{
+.coding-details,.front-details{
     padding: 1rem 1rem;
 }
 
@@ -644,13 +682,17 @@ strong {
     margin: 1rem 0 0 0;
 }
 
+.code-exp .pr2,.cer-exp .cer2,.front-exp .projects-front{
+    margin: 0 0 1rem 0;
+}
+
 .code-exp{
     display: none;
 }
 
 .expand {
     align-items: center;
-    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    background-image: linear-gradient(100deg,#AF40FF, #5B42F3 50%,#00DDEB);
     border: 0;
     border-radius: 8px;
     box-sizing: border-box;
@@ -668,8 +710,8 @@ strong {
     cursor: pointer;
     transition: all .3s;
     margin: 3rem 0 0 0;
-    width: 210px;
-    height: 90px;
+    width: 200px;
+    height: 70px;
 }
    
 .expand:active,.expand:hover {
@@ -679,12 +721,12 @@ strong {
    
 .expand h1 {
     background-color: rgb(5, 6, 45);
-    padding: 35px 15px;
+    padding: 25px 15px;
     border-radius: 6px;
     width: 100%;
     height: 100%;
     transition: 300ms;
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
    
 .expand:hover h1 {
@@ -695,16 +737,14 @@ strong {
     transform: scale(0.9);
 }
 
+.tit,.slidecard h1{
+    font-size: 2.5rem;
+}
+
 /* ==================== certificates ==================== */
 
 .certificates{
     padding: 0 0 5rem 0;
-}
-
-.certificates img{
-    margin: 0 0 1.5rem 0;
-    width: 390px;
-    height: 170px;
 }
 
 .cer2{
@@ -714,27 +754,14 @@ strong {
     gap: 1rem;
 }
 
-.slidecard3{
-    background: #000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 1rem;
-    width: 430px;
-    height: 420px;
-    border: 3px solid;
-    border-image: linear-gradient(to right,#9e225c, rgb(75, 124, 196)) 1;
-}
-
 .tit2{
     padding : 1.5rem 0;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .tit3{
     margin: 0 0 0.75rem 0;
-    font-size: 1rem;
+    font-size: 1.7rem;
 }
 
 /* ==================== Contact ==================== */
@@ -787,7 +814,7 @@ p{
 }
 
 .pprojects p{
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -866,21 +893,10 @@ p{
     .edu1{
         padding: 2rem 2rem;
     }
-
-    .pprojects img{
-        margin: 0 0 1rem 0;
-        width: 250px;
-        height: 110px;
-    }
-
-    .slidecard{
-        width: 280px;
-        height: 310px;
-    }
     
     .slidecard2{
-        width: 310px;
-        height: 170px;
+        width: 450px;
+        height: 190px;
     }
 
     .ab1{
@@ -895,36 +911,42 @@ p{
         margin: 0;
     }
 
-    .coding-details{
-        padding: 1rem 1rem;
-    }
-
-    .front-details{
-        padding: 1rem 1rem;
-    }
-
-    .certificates img{
-        width: 320px;
+    .certificates img,.pprojects img{
+        width: 410px;
         height: 140px;
     }
     
-    .slidecard3{
+    .slidecard3,.slidecard{
         padding: 1rem 1rem;
-        width: 360px;
-        height: 320px;
+        width: 450px;
+        height: 370px;
+    }
+
+    .slidecard3{
+        height: 330px;
+    }
+
+    .expand {
+        width: 150px;
+        height: 55px;
+    }
+       
+    .expand h1 {
+        padding: 19px 12px;
+        font-size: 1.5rem;
     }
     
     .tit2{
         padding : 0.5rem 0;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .tit3{
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     .tit{
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .acc img{
@@ -935,13 +957,13 @@ p{
     .fi{
         font-size: 6rem;
     }
-    
-    p{
-        font-size: 1rem;
+
+    .education p{
+        font-size: 1.1rem;
     }
 
     .pprojects p{
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
 
     .footer p{
@@ -991,19 +1013,9 @@ p{
     .edu1{
         padding: 2rem 2rem;
     }
-
-    .pprojects img{
-        margin: 0 0 1rem 0;
-        width: 200px;
-    }
-
-    .slidecard{
-        width: 230px;
-        height: 280px;
-    }
     
     .slidecard2{
-        width: 220px;
+        width: 320px;
         height: 170px;
     }
 
@@ -1011,28 +1023,32 @@ p{
         margin: 4rem 0 2rem 0;
     }
 
-    .certificates img{
-        width: 270px;
+    .certificates img,.pprojects img{
+        width: 285px;
         height: 120px;
     }
     
-    .slidecard3{
+    .slidecard3,.slidecard{
         padding: 1rem 1rem;
-        width: 300px;
-        height: 295px;
+        width: 320px;
+        height: 290px;
+    }
+
+    .slidecard{
+        height: 305px;
+    }
+
+    .slidecard h1,.tit{
+        font-size: 1.8rem;
     }
     
     .tit2{
         padding : 1rem 0;
-        font-size: 1rem;
+        font-size: 1.15rem;
     }
 
     .tit3{
         font-size: 0.9rem;
-    }
-
-    .tit{
-        font-size: 1.2rem;
     }
 
     .btn a{
@@ -1052,13 +1068,9 @@ p{
     .fi{
         font-size: 4rem;
     }
-    
-    p{
-        font-size: 0.75rem;
-    }
 
-    .pprojects p{
-        font-size: 0.7rem;
+    .pprojects p,p{
+        font-size: 0.9rem;
     }
 
     .footer p{
@@ -1066,13 +1078,17 @@ p{
     }
 
     .expand{
-        width: 150px;
-        height: 60px;
+        width: 130px;
+        height: 45px;
     }
 
     .expand h1{
-        font-size: 1.5rem;
-        padding: 20px 10px;
+        font-size: 1.2rem;
+        padding: 13px 10px;
+    }
+
+    .education p{
+        font-size: 0.85rem;
     }
 }
 
@@ -1102,7 +1118,7 @@ p{
     }
 
     .ab2{
-        width: 300px;
+        width: 450px;
         margin: 0;
     }
 
@@ -1118,23 +1134,8 @@ p{
         width: 150px;
     }
 
-    .edu3{
-        width: 150px;
-    }
-
     .edu1{
         padding: 2rem 1rem;
-    }
-
-    .pprojects img{
-        margin: 0 0 1rem 0;
-        width: 110px;
-        height: 50px;
-    }
-
-    .slidecard{
-        width: 130px;
-        height: 205px;
     }
     
     .slidecard2{
@@ -1147,12 +1148,8 @@ p{
         gap: 15px;
     }
 
-    .slidecard h1{
-        font-size: 1rem;
-    }
-
-    .education img{
-        width: 60%;
+    .slidecard h1,.tit{
+        font-size: 0.7rem;
     }
 
     .part{
@@ -1167,32 +1164,31 @@ p{
         font-size: 1rem;
     }
 
-    .certificates img{
-        width: 110px;
-        height: 50px;
+    .certificates img,.pprojects img{
+        width: 170px;
+        height: 60px;
     }
     
+    .slidecard3,.slidecard{
+        width: 190px;
+        height: 235px;
+    }
+
     .slidecard3{
-        padding: 0 1rem;
-        width: 130px;
-        height: 185px;
+        height: 200px;
     }
     
     .tit2{
         padding : 0 0 0.7rem 0;
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
 
     .tit3{
-        font-size: 0.5rem;
+        font-size: 0.55rem;
     }
 
     .ed3{
         font-size: 1rem;
-    }
-
-    .tit{
-        font-size: 0.6rem;
     }
 
     .btn a{
@@ -1225,17 +1221,88 @@ p{
     }
 
     .expand{
-        width: 100px;
-        height: 50px;
+        width: 95px;
+        height: 35px;
     }
 
     .expand h1{
         font-size: 1rem;
-        padding: 15px 8px;
+        padding: 8px 3px;
+    }
+
+    .education{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .edu3{
+        width: 550px;
+    }
+
+    .education img{
+        width: 100%;
+    }
+
+    .navv {
+        display: none;
+    }
+    
+    .navbar__toggle {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .navbar {
+        display: none;
+        width: 50px;
+        background-color: #333;
+    }
+
+    .Home{
+        position: relative;
+    }
+    
+    .navbar.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 55px;
+        right: 0;
+        height: 90vh;
+        width: 60px;
+    }
+
+    .navbar__links a {
+        font-size: 10px;
+        text-decoration: none;
+        padding: 5px;
+        
+    }
+}
+
+@media screen and (max-width : 597px){
+    .edu3{
+        width: 400px;
+    }
+
+    .education img{
+        width: 100%;
     }
 }
 
 @media screen and (max-width : 425px){
+    .navbar__links a {
+        font-size: 8px;
+    }
+
+    .navbar.active {
+        width: 45px;
+    }
+
     #logo{
         font-size: 0.5rem;
     }
@@ -1248,21 +1315,16 @@ p{
         font-size: 0.5rem;
     }
 
-    .education{
-        flex-direction: column;
-        height: auto;
-    }
-
-    .edu3{
-        width: 300px;
-    }
-
     .a1{
         width: 60px;
     }
 
     .part{
         font-size: 1rem;
+    }
+
+    .edu3{
+        width: 300px;
     }
 
     .ed3{
@@ -1286,6 +1348,7 @@ p{
     }
 
     .ab2{
+        width: 250px;
         margin: 0 0 0 0;
     }
 
@@ -1296,52 +1359,42 @@ p{
     .switch{
         font-size: 4px;
     }
-
-    .pprojects img{
-        margin: 0 0 1rem 0;
-        width: 75px;
-    }
-
-    .slidecard{
-        width: 95px;
-        height: 185px;
-    }
     
     .slidecard2{
-        width: 90px;
-        height: 140px;
-    }
-
-    .tit{
-        font-size: 0.4rem;
+        width: 135px;
+        height: 100px;
     }
 
     .education img{
         width: 60%;
     }
 
-    .certificates img{
-        width: 75px;
+    .certificates img,.pprojects img{
+        width: 120px;
         height: 40px;
     }
 
-    .projects-front h1{
+    .projects-front h1,.tit{
         font-size: 0.7rem;
     }
     
-    .slidecard3{
-        padding: 0 1rem;
-        width: 90px;
+    .slidecard3,.slidecard{
+        padding: 0;
+        width: 135px;
         height: 165px;
+    }
+
+    .slidecard3 {
+        height: 140px;
     }
 
     .tit2{
         padding: 0rem 0 0.7rem 0;
-        font-size: 0.4rem;
+        font-size: 0.45rem;
     }
 
     .tit3{
-        font-size: 0.3rem ;
+        font-size: 0.4rem ;
     }
 
     .btn a{
@@ -1353,33 +1406,32 @@ p{
         width: 4rem;
     }
 
-    .education img{
-        width: 100%;
-    }
-
     .fi{
         font-size: 2rem;
     }
 
-    p{
-        font-size: 0.5rem;
-    }
-
     .pprojects p{
-        font-size: 0.4rem;
+        font-size: 0.45rem;
     }
 
     .footer p{
         font-size: 0.3rem;
     }
 
+    .education p,p{
+        font-size: 0.5rem;
+    }
+
     .expand{
-        width: 90px;
-        height: 40px;
+        width: 75px;
+        height: 28px;
     }
 
     .expand h1{
-        padding: 0.4rem;
-        padding: 10px 2px;
+        font-size: 0.7rem;
+        padding: 5px 2px;
+    }
+    .education img{
+        width: 100%;
     }
 }

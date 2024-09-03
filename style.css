@@ -1036,12 +1036,12 @@ p{
     }
 
     .slidecard h1,.tit{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     
     .tit2{
         padding : 1rem 0;
-        font-size: 1.15rem;
+        font-size: 1rem;
     }
 
     .tit3{
@@ -1067,7 +1067,7 @@ p{
     }
 
     .pprojects p,p{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .footer p{

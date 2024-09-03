@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esraa Emary</title>
-    <link rel="icon" href="https://github.com/esraa-emary/photos/blob/main/eee.png?raw=true" type="image/x-icon">
+    <link rel="icon" href="https://github.com/esraa-emary/photos/blob/main/e%20(2).png?raw=true" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -12,13 +12,15 @@
     <header class="header" id="header">
         <nav id="toggleText" class="nav-bar">
             <h1 class="page" id="logo">Esraa Emary</h1>
-            <a class="page" href="#header">Home</a>
-            <a class="page" href="#about">About</a>
-            <a class="page" href="#education">Education</a>
-            <a class="page" href="#pprojects">Projects</a>
-            <a class="page" href="#Cetrificates">Cetrificates</a>
-            <a class="page" href="#footer">Contact</a>
-            <a class="page" href="https://drive.google.com/file/d/1RP_6mDUDPe49fjuGUDVsVOQeP6qnBagn/view?usp=sharing" target="_blank">Resume</a>
+            <div class="navv">
+                <a class="page" href="#header">Home</a>
+                <a class="page" href="#about">About</a>
+                <a class="page" href="#education">Education</a>
+                <a class="page" href="#pprojects">Projects</a>
+                <a class="page" href="#Cetrificates">Certificates</a>
+                <a class="page" href="#footer">Contact</a>
+                <a class="page" href="https://drive.google.com/file/d/1RP_6mDUDPe49fjuGUDVsVOQeP6qnBagn/view?usp=sharing" target="_blank">Resume</a>
+            </div>
             <label class="switch">
                 <input onclick="toggleMode()" type="checkbox">
                 <div class="slider"></div>
@@ -26,9 +28,26 @@
                   <div class="slider-card-face slider-card-front"></div>
                   <div class="slider-card-face slider-card-back"></div>
                 </div>
-              </label>
+            </label>
+            <div class="navbar">
+                <ul class="navbar__links">
+                    <li><a class="page" href="#header">Home</a></li>
+                    <li><a class="page" href="#about">About</a></li>
+                    <li><a class="page" href="#education">Education</a></li>
+                    <li><a class="page" href="#pprojects">Projects</a></li>
+                    <li><a class="page" href="#Cetrificates">Certificates</a></li>
+                    <li><a class="page" href="#footer">Contact</a></li>
+                    <li><a class="page" href="https://drive.google.com/file/d/1RP_6mDUDPe49fjuGUDVsVOQeP6qnBagn/view?usp=sharing" target="_blank">Resume</a></li>
+                </ul>
+            </div>
+            <button class="navbar__toggle" aria-label="Toggle menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M4 6h16v2H4zm0 4h16v2H4zm0 4h16v2H4z"/>
+                </svg>
+            </button>
         </nav>
     </header>
+    
 
     <!-- ======================== home ======================== -->
    
@@ -127,7 +146,7 @@
                 <div class="projects-front">
                     <div class="slidecard">
                         <img src = "https://github.com/esraa-emary/photos/blob/main/pow.png?raw=true" class = "slideimge" alt = "">
-                        <h1>STAR</h1>
+                        <h1>Powsome</h1>
                         <center><p class="front-details">
                             This project represent a pawsome page with 
                             HTML,CSS and JAVA SCRIPT. 
@@ -161,66 +180,11 @@
                             </div>
                         </button>
                     </div>
-                    <div class="slidecard">
-                        <img src = "https://github.com/esraa-emary/photos/blob/main/beach.png?raw=true" class = "slideimge" alt = "">
-                        <h1>Glass Beach</h1>
-                        <center><p class="front-details">
-                            This project represent a Glass Beach page 
-                            with HTML,CSS and JAVA SCRIPT.
-                        </p></center>
-                        <button type="button" class="btn">
-                            <strong><h1><a href="https://github.com/esraa-emary/Glass-Beach" target="_blank">Details</a></h1></strong>
-                            <div id="container-stars">
-                              <div id="stars"></div>
-                            </div>
-                            <div id="glow">
-                              <div class="circle"></div>
-                              <div class="circle"></div>
-                            </div>
-                        </button>
-                    </div>
                 </div>
-                
             </div>
-            <!-- <div class="front-exp" id="front-exp">
+            <div class="front-exp" id="front-exp">
                 <div class="projects-front">
                     <div class="slidecard">
-                        <img src = "https://github.com/esraa-emary/photos/blob/main/pow.png?raw=true" class = "slideimge" alt = "">
-                        <h1>STAR</h1>
-                        <center><p class="front-details">
-                            This project represent a pawsome page with 
-                            HTML,CSS and JAVA SCRIPT. 
-                        </p></center>
-                        <button type="button" class="btn">
-                            <strong><h1><a href="https://github.com/esraa-emary/Pawsome" target="_blank">Details</a></h1></strong>
-                            <div id="container-stars">
-                              <div id="stars"></div>
-                            </div>
-                            <div id="glow">
-                              <div class="circle"></div>
-                              <div class="circle"></div>
-                            </div>
-                        </button>
-                    </div>
-                    <div class="slidecard">
-                        <img src = "https://github.com/esraa-emary/photos/blob/main/star.png?raw=true" class = "slideimge" alt = "">
-                        <h1>STAR</h1>
-                        <center><p class="front-details">
-                            This project represent a STAR page with 
-                            HTML,CSS and JAVA SCRIPT. 
-                        </p></center>
-                        <button type="button" class="btn">
-                            <strong><h1><a href="https://github.com/esraa-emary/STAR" target="_blank">Details</a></h1></strong>
-                            <div id="container-stars">
-                              <div id="stars"></div>
-                            </div>
-                            <div id="glow">
-                              <div class="circle"></div>
-                              <div class="circle"></div>
-                            </div>
-                        </button>
-                    </div>
-                    <div class="slidecard">
                         <img src = "https://github.com/esraa-emary/photos/blob/main/beach.png?raw=true" class = "slideimge" alt = "">
                         <h1>Glass Beach</h1>
                         <center><p class="front-details">
@@ -239,7 +203,7 @@
                         </button>
                     </div>
                 </div>
-            </div> -->
+            </div>
             <center><button class="expand" id="expand-front">
                 <h1 class="text">Expand All</h1>
             </button></center>
@@ -253,7 +217,6 @@
                 </div>
                 <div class="a1"></div>
             </div>
-
             <div class="p2">
                 <div class="projects-coding">
                     <div class="pr2">
@@ -289,21 +252,6 @@
                                     </div>
                                 </button>
                         </div>
-                        <div class="slidecard2">
-                            <h1 class="tit">Photo Editor</h1>
-                            <center><p class="coding-details">
-                                This program takes photos and applies some effects to it.  <br> <br></center>
-                                <button type="button" class="btn">
-                                    <strong><h1><a href="https://github.com/esraa-emary/Photo-Editor" target="_blank">Details</a></h1></strong>
-                                    <div id="container-stars">
-                                        <div id="stars"></div>
-                                    </div>
-                                    <div id="glow">
-                                      <div class="circle"></div>
-                                      <div class="circle"></div>
-                                    </div>
-                                </button>
-                        </div>
                     </div>
                     <div class="code-exp" id="code-exp">
                         <div class="pr2">
@@ -330,6 +278,23 @@
                                     two's complement, addition and subtraction.</p></center>
                                     <button type="button" class="btn">
                                         <strong><h1><a href="https://github.com/esraa-emary/Binary-Operations" target="_blank">Details</a></h1></strong>
+                                        <div id="container-stars">
+                                            <div id="stars"></div>
+                                        </div>
+                                        <div id="glow">
+                                          <div class="circle"></div>
+                                          <div class="circle"></div>
+                                        </div>
+                                    </button>
+                            </div>
+                        </div>
+                        <div class="pr2">
+                            <div class="slidecard2">
+                                <h1 class="tit">Photo Editor</h1>
+                                <center><p class="coding-details">
+                                    This program takes photos and applies some effects to it.  </center>
+                                    <button type="button" class="btn">
+                                        <strong><h1><a href="https://github.com/esraa-emary/Photo-Editor" target="_blank">Details</a></h1></strong>
                                         <div id="container-stars">
                                             <div id="stars"></div>
                                         </div>
@@ -390,24 +355,24 @@
                     </div>
                 </button>
             </div>
-            <div class="slidecard3">
-                <img height="210px" width="350px" src = "https://github.com/esraa-emary/photos/blob/main/certificate2.png?raw=true" class = "slideimge" alt = "">
-                <center><h1 class="tit2">The principles of writing clean code</h1></center>
-                <h1 class="tit3">From: Mahara Tech</h1>
-                <button type="button" class="btn">
-                    <strong><h1><a href="https://maharatech.gov.eg/mod/customcert/verify_certificate.php?contextid=447929&code=scwUz4gfXi&qrcode=1" target="_blank">Certificate</a></h1></strong>
-                    <div id="container-stars">
-                    <div id="stars"></div>
-                    </div>
-                    <div id="glow">
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    </div>
-                </button>
-            </div>
         </div>
         <div class="cer-exp" id="cer-exp">
             <div class="cer2">
+                <div class="slidecard3">
+                    <img height="210px" width="350px" src = "https://github.com/esraa-emary/photos/blob/main/certificate2.png?raw=true" class = "slideimge" alt = "">
+                    <center><h1 class="tit2">The principles of writing clean code</h1></center>
+                    <h1 class="tit3">From: Mahara Tech</h1>
+                    <button type="button" class="btn">
+                        <strong><h1><a href="https://maharatech.gov.eg/mod/customcert/verify_certificate.php?contextid=447929&code=scwUz4gfXi&qrcode=1" target="_blank">Certificate</a></h1></strong>
+                        <div id="container-stars">
+                        <div id="stars"></div>
+                        </div>
+                        <div id="glow">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        </div>
+                    </button>
+                </div>
                 <div class="slidecard3">
                     <img height="210px" width="350px" src = "https://github.com/esraa-emary/photos/blob/main/cer4.png?raw=true" class = "slideimge" alt = "">
                     <center><h1 class="tit2">AI for Everyone (AI4E)</h1>
@@ -423,6 +388,38 @@
                         </div>
                     </button>
                 </div>
+            </div>
+            <div class="cer2">
+                <!-- <div class="slidecard3">
+                    <img height="210px" width="350px" src = "https://github.com/esraa-emary/photos/blob/main/certificate2.png?raw=true" class = "slideimge" alt = "">
+                    <center><h1 class="tit2">The principles of writing clean code</h1></center>
+                    <h1 class="tit3">From: Mahara Tech</h1>
+                    <button type="button" class="btn">
+                        <strong><h1><a href="https://maharatech.gov.eg/mod/customcert/verify_certificate.php?contextid=447929&code=scwUz4gfXi&qrcode=1" target="_blank">Certificate</a></h1></strong>
+                        <div id="container-stars">
+                        <div id="stars"></div>
+                        </div>
+                        <div id="glow">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        </div>
+                    </button>
+                </div>
+                <div class="slidecard3">
+                    <img height="210px" width="350px" src = "https://github.com/esraa-emary/photos/blob/main/cer4.png?raw=true" class = "slideimge" alt = "">
+                    <center><h1 class="tit2">AI for Everyone (AI4E)</h1>
+                    <h1 class="tit3">From: Mahara Tech</h1>
+                    <button type="button" class="btn">
+                        <strong><h1><a href="https://maharatech.gov.eg/badges/badge.php?hash=d03cdb2d5273941a754bc049b5789ffee5c05197" target="_blank">Certificate</a></h1></strong>
+                        <div id="container-stars">
+                        <div id="stars"></div>
+                        </div>
+                        <div id="glow">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        </div>
+                    </button>
+                </div> -->
             </div>
         </div>
         <center><button class="expand" id="expand-cer">

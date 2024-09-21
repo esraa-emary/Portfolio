@@ -40,7 +40,7 @@ body{
 
 /* ==================== Header ==================== */
 
-header{
+header section{
     position: fixed;
     top: 0;
     left: 0;
@@ -556,7 +556,7 @@ span{
     justify-content: center;
     align-items: center;
     border: 3px solid var(--main-color); 
-    border-radius: 30px;
+    border-radius: 35px;
     padding: 0 0 4rem 0;
 }
 
@@ -739,7 +739,7 @@ span{
 
 /* ==================== Contact ==================== */
 
-footer{
+footer section{
     height: 100vh;
 }
 

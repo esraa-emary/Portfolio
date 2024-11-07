@@ -1,2 +1,2 @@
 # Portfolio
-### This project represent a Glass Beach page with HTML,CSS and JAVA SCRIPT.
+### This project represent my portfolio with HTML,CSS and JAVA SCRIPT.

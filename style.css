@@ -314,7 +314,7 @@ span{
     margin: 0 0 5rem 0;
 }
 
-.education,.codingprojects,.frontprojects,.certificates,.experience{
+.education,.codingprojects,.frontprojects,.certificates,.experience,.qtprojects{
     padding: 100px 15px;
     background: var(--second--bg-color);
 }
@@ -475,12 +475,16 @@ span{
 
 /* ==================== Projects1,2 ==================== */
 
+.qtprojects{
+    background-color: var(--bg-color);
+}
+
 .frontprojects{
     background-color: var(--second--bg-color);
 }
 
 .codingprojects{
-    background-color: var(--bg-color);
+    background-color: var(--second--bg-color);
 }
 
 .projects img,.certificates img{
@@ -521,12 +525,12 @@ span{
     height: 11rem;
 }
 
-.projects-front h1 ,.projects-coding h1{
+.projects-front h1 ,.projects-coding h1,.projects-qt h1{
     font-size: 4rem;
     font-weight: 500;
 }
 
-.front-details,.coding-details{
+.front-details,.coding-details ,.qt-details{
     font-size: 2rem;
     text-align: center;
     font-weight: 200;
@@ -541,7 +545,7 @@ span{
     justify-content: center;
 }
 
-.codingprojects,.frontprojects,.certificates{
+.codingprojects,.frontprojects,.certificates,.qtprojects{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -549,8 +553,8 @@ span{
     gap: 1rem;
 }
 
-.slidecard, .slidecard2, .slidecard3 {
-    background: var(--second--bg-color);
+.slidecard, .slidecard2, .slidecard3{
+    background: var(--bg-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -560,11 +564,11 @@ span{
     padding: 0 0 4rem 0;
 }
 
-.slidecard, .slidecard3 {
-    background: var(--bg-color);
+.slidecard3{
+    background: var(--second--bg-color);
 }
 
-.slidecard:hover,.slidecard2:hover,.slidecard3:hover,.r img:hover,.acc img:hover{
+.slidecard:hover,.slidecard2:hover,.slidecard3:hover,.r img:hover,.acc img:hover,.slidecard4:hover{
     transform: scale(1.01,1.01);
     transition: all 0.3s;
     box-shadow: 0 0 5rem var(--main-color);
@@ -596,6 +600,7 @@ span{
     width: 100px;
     height: 40px;
     background-color: var(--bg-color);
+    padding: 0;
 }
 
 .btn-pro a{
@@ -649,19 +654,19 @@ span{
     cursor: pointer;
 }
   
-.frontprojects .expand::after ,.certificates .expand::after{
+.certificates .expand::after,.qtprojects .expand::after{
     content: "";
     position: absolute;
     top: -10px;
     left: 3%;
     width: 95%;
     height: 40%;
-    background-color: var(--second--bg-color);
+    background-color: var(--bg-color);
     transition: 0.5s;
     transform-origin: center;
 }
   
-.frontprojects .expand::before ,.certificates .expand::before{
+.certificates .expand::before,.qtprojects .expand::before {
     content: "";
     transform-origin: center;
     position: absolute;
@@ -669,23 +674,23 @@ span{
     left: 3%;
     width: 95%;
     height: 40%;
-    background-color: var(--second--bg-color);
+    background-color: var(--bg-color);
     transition: 0.5s;
 }
 
-.codingprojects .expand::after {
+.frontprojects .expand::after ,.codingprojects .expand::after {
     content: "";
     position: absolute;
     top: -10px;
     left: 3%;
     width: 95%;
     height: 40%;
-    background-color: var(--bg-color);
+    background-color: var(--second--bg-color);
     transition: 0.5s;
     transform-origin: center;
 }
   
-.codingprojects .expand::before {
+.frontprojects .expand::before ,.codingprojects .expand::before {
     content: "";
     transform-origin: center;
     position: absolute;
@@ -693,7 +698,7 @@ span{
     left: 3%;
     width: 95%;
     height: 40%;
-    background-color: var(--bg-color);
+    background-color: var(--second--bg-color);
     transition: 0.5s;
 }
   
@@ -710,7 +715,7 @@ span{
 /* ==================== certificates ==================== */
 
 .certificates{
-    background-color: var(--second--bg-color);
+    background-color: var(--bg-color);
 }
 
 .certificates .btn-pro{
@@ -737,6 +742,26 @@ span{
     font-size: 2.5rem;
 }
 
+.button-container{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.button-container2{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.xyz{
+    width: 107px;
+}
+
+.wxy{
+    width: 140px;
+}
+
 /* ==================== Contact ==================== */
 
 footer section{
@@ -744,7 +769,7 @@ footer section{
 }
 
 .contact{
-    background-color: var(--second--bg-color);
+    background-color: var(--bg-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -765,7 +790,7 @@ footer section{
     bottom: 0;
     width: 100%;
     padding: 40px 0 20px 0;
-    background-color: var(--bg-color);
+    background-color: var(--second--bg-color);
 }
 
 .footer .social{

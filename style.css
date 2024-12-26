@@ -599,7 +599,6 @@ span{
     transition: all .3s;
     width: 100px;
     height: 40px;
-    background-color: var(--bg-color);
     padding: 0;
 }
 
@@ -626,7 +625,7 @@ span{
     font-size: 2rem;
 }
 
-.frontprojects .btn-pro h1 ,.certificates .btn-pro h1 {
+.frontprojects .btn-pro h1 ,.codingprojects .btn-pro h1 {
     background-color: var(--bg-color);
 }
    
@@ -1009,6 +1008,14 @@ footer section{
         font-size: 6rem;
     }
 
+    .timeline-item p{
+        font-size: 1.5rem;
+    }
+
+    .education h3{
+        font-size: 3rem;
+    }
+
     .footer ul li a{
         font-size: 67%;
     }
@@ -1070,11 +1077,19 @@ footer section{
     }
 
     .education,.codingprojects,.frontprojects,.certificates{
-        padding: 50px 15px;
+        padding: 0;
     }
 
     .timeline-content{
         padding: 20px ;
+    }
+
+    .button-container,.button-container2{
+        width: 85%;
+    }
+
+    .wxy{
+        width: 125px;
     }
 
     .label{

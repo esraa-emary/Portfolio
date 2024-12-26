@@ -87,3 +87,14 @@ document.getElementById("expand-front").addEventListener("click", function() {
         myDiv.style.display = "none";
     }
 });
+
+document.getElementById("expand-qt").addEventListener("click", function() {
+    var myDiv = document.getElementById("qt-exp");
+    if (myDiv.style.display === "" || myDiv.style.display === "none") {
+        myDiv.style.display = "flex";
+        myDiv.style.flexDirection = "column";
+        myDiv.style.gap = "1rem";
+    } else {
+        myDiv.style.display = "none";
+    }
+});
